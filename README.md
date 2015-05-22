@@ -5,6 +5,7 @@
 [![Code Climate](https://codeclimate.com/github/sensu-plugins/sensu-plugins-twemproxy/badges/gpa.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-twemproxy)
 [![Test Coverage](https://codeclimate.com/github/sensu-plugins/sensu-plugins-twemproxy/badges/coverage.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-twemproxy)
 [![Dependency Status](https://gemnasium.com/sensu-plugins/sensu-plugins-twemproxy.svg)](https://gemnasium.com/sensu-plugins/sensu-plugins-twemproxy)
+[ ![Codeship Status for sensu-plugins/sensu-plugins-twemproxy](https://codeship.com/projects/145ac380-e2dc-0132-54f7-76e3d81118b5/status?branch=master)](https://codeship.com/projects/81584)
 
 ## Functionality
 
@@ -80,39 +81,7 @@ twemproxy01.twemproxy.shard01.out_queue_bytes 0 1425501320
 
 ## Installation
 
-Add the public key (if you haven’t already) as a trusted certificate
-
-```
-gem cert --add <(curl -Ls https://raw.githubusercontent.com/sensu-plugins/sensu-plugins.github.io/master/certs/sensu-plugins.pem)
-gem install sensu-plugins-twemproxy -P MediumSecurity
-```
-
-You can also download the key from /certs/ within each repository.
-
-#### Rubygems
-
-`gem install sensu-plugins-twemproxy`
-
-#### Bundler
-
-Add *sensu-plugins-twemproxy* to your Gemfile and run `bundle install` or `bundle update`
-
-#### Chef
-
-Using the Sensu **sensu_gem** LWRP
-```
-sensu_gem 'sensu-plugins-twemproxy' do
-  options('--prerelease')
-  version '0.0.1.alpha.4'
-end
-```
-
-Using the Chef **gem_package** resource
-```
-gem_package 'sensu-plugins-twemproxy' do
-  options('--prerelease')
-  version '0.0.1.alpha.4'
-end
-```
+[Installation and Setup](https://github.com/sensu-plugins/documentation/blob/master/user_docs/installation_instructions.md)
+>>>>>>> update repo
 
 ## Notes
