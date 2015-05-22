@@ -5,7 +5,7 @@
 [![Code Climate](https://codeclimate.com/github/sensu-plugins/sensu-plugins-twemproxy/badges/gpa.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-twemproxy)
 [![Test Coverage](https://codeclimate.com/github/sensu-plugins/sensu-plugins-twemproxy/badges/coverage.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-twemproxy)
 [![Dependency Status](https://gemnasium.com/sensu-plugins/sensu-plugins-twemproxy.svg)](https://gemnasium.com/sensu-plugins/sensu-plugins-twemproxy)
-[ ![Codeship Status for sensu-plugins/sensu-plugins-twemproxy](https://codeship.com/projects/145ac380-e2dc-0132-54f7-76e3d81118b5/status?branch=master)](https://codeship.com/projects/81584)
+[![Codeship Status for sensu-plugins/sensu-plugins-twemproxy](https://codeship.com/projects/145ac380-e2dc-0132-54f7-76e3d81118b5/status?branch=master)](https://codeship.com/projects/81584)
 
 ## Functionality
 
