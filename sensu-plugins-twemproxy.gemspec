@@ -22,11 +22,11 @@ Gem::Specification.new do |s|
   s.homepage               = 'https://github.com/sensu-plugins/sensu-plugins-twemproxy'
   s.license                = 'MIT'
   s.metadata               = { 'maintainer'         => '',
-                               'development_status' => 'unmaintained',
-                               'production_status'  => 'unstable - testing reccomended',
+                               'development_status' => 'active',
+                               'production_status'  => 'unstable - testing recommended',
                                'release_draft'      => 'false',
                                'release_prerelease' => 'false'
-                               }
+                              }
   s.name                   = 'sensu-plugins-twemproxy'
   s.platform               = Gem::Platform::RUBY
   s.post_install_message   = 'You can use the embedded Ruby by setting EMBEDDED_RUBY=true in /etc/default/sensu'
@@ -38,8 +38,6 @@ Gem::Specification.new do |s|
   s.version                = SensuPluginsTwemproxy::Version::VER_STRING
 
   s.add_runtime_dependency 'sensu-plugin', '1.1.0'
-  s.add_runtime_dependency 'json',         '1.8.2'
-  s.add_runtime_dependency 'timeout',      '0.0.1'
 
   s.add_development_dependency 'codeclimate-test-reporter', '~> 0.4'
   s.add_development_dependency 'rubocop',                   '~> 0.30'

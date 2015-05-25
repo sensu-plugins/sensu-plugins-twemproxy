@@ -82,6 +82,5 @@ twemproxy01.twemproxy.shard01.out_queue_bytes 0 1425501320
 ## Installation
 
 [Installation and Setup](https://github.com/sensu-plugins/documentation/blob/master/user_docs/installation_instructions.md)
->>>>>>> update repo
 
 ## Notes
