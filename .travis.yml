@@ -24,7 +24,7 @@ deploy:
     secure: VW5qq9GZQSxJ2zKCtvbZ92HPc5HjONjNyFxNT5L5PdcZpa1uL//9vQPUuXdswTnFu3Vo8OScWhMXjgxd2VoxtQKF2BN75WF+hEKo4knS0KBcC9LvPv884PE7LPNZyWsuWItC9Yz3MviWXH0PQOH2DLD106kjNnT3UVKjie5OEAg=
   gem: sensu-plugins-twemproxy
   on:
-    ags: true
+    tags: true
     all_branches: true
     rvm: 1.9.3
     rvm: 2.0
