@@ -36,7 +36,7 @@ require 'json'
 # Twemproxy metrics
 #
 class Twemproxy2Graphite < Sensu::Plugin::Metric::CLI::Graphite
-  SKIP_ROOT_KEYS = %w(service source version uptime timestamp).freeze
+  SKIP_ROOT_KEYS = %w(service source version uptime timestamp total_connections curr_connections).freeze
 
   option :host,
          description: 'Twemproxy stats host to connect to',
