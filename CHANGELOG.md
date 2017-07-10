@@ -5,7 +5,10 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 
 ## [Unreleased]
 ### Fixed
-- Update ignored JSON keys to prevent script crashing out
+- Update ignored JSON keys to prevent script crashing out (@Evesy)
+
+### Added
+- Config option to provide alternative list of keys to ignore (@Evesy)
 
 ## [1.0.0] - 2017-07-09
 ### Added

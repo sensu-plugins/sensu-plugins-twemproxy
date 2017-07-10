@@ -36,7 +36,7 @@ require 'json'
 # Twemproxy metrics
 #
 class Twemproxy2Graphite < Sensu::Plugin::Metric::CLI::Graphite
-  SKIP_ROOT_KEYS = %w(service source version uptime timestamp total_connections curr_connections).freeze
+  SKIP_KEYS = %w(service source version uptime timestamp total_connections curr_connections).freeze
 
   option :host,
          description: 'Twemproxy stats host to connect to',
@@ -68,11 +68,22 @@ class Twemproxy2Graphite < Sensu::Plugin::Metric::CLI::Graphite
          proc: proc(&:to_i),
          default: 5
 
+  option :skip_keys,
+          description: 'Keys to skip when looping through metrics (Comma seperated)',
+          short: '-k KEYS',
+          long: '--skip-keys KEYS'
+
   def run
+    skip_keys = if config[:skip_keys]
+                  config[:skip_keys].split(',')
+                else
+                  SKIP_KEYS
+                end
+
     Timeout.timeout(config[:timeout]) do
       sock = TCPSocket.new(config[:host], config[:port])
       data = JSON.parse(sock.read)
-      pools = data.keys - SKIP_ROOT_KEYS
+      pools = data.keys - skip_keys
 
       pools.each do |pool_key|
         data[pool_key].each do |key, value|
