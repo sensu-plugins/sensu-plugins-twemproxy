@@ -69,9 +69,9 @@ class Twemproxy2Graphite < Sensu::Plugin::Metric::CLI::Graphite
          default: 5
 
   option :skip_keys,
-          description: 'Keys to skip when looping through metrics (Comma seperated)',
-          short: '-k KEYS',
-          long: '--skip-keys KEYS'
+         description: 'Keys to skip when looping through metrics (Comma seperated)',
+         short: '-k KEYS',
+         long: '--skip-keys KEYS'
 
   def run
     skip_keys = if config[:skip_keys]
